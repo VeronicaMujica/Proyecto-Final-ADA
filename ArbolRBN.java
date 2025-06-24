@@ -1,5 +1,4 @@
 // ArbolRBN.java
-// ArbolRBN.java
 public class ArbolRBN {
     private final NodoRBN NIL = new NodoRBN();
     public NodoRBN raiz;
@@ -142,7 +141,6 @@ public class ArbolRBN {
         y.der = x;
         x.padre = y;
     }
-    // La elimina ción la agregamos luego si lo deseas.
 
     public void eliminar(int clave) {
         NodoRBN nodo = buscarNodo(clave);
@@ -252,7 +250,6 @@ public class ArbolRBN {
         }
         return nodo;
     }
-
 
 }
 

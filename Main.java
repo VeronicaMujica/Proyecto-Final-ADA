@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         ArbolRBN arbol = new ArbolRBN();
-        String[] mensajes = new String[4000000]; // buffer para mensajes
+        String[] mensajes = new String[4000000];
         int index = 0;
 
         try {
@@ -27,7 +27,7 @@ public class Main {
             br.close();
             long fin = System.nanoTime();
 
-            // Imprimir todos los mensajes acumulados
+            
             for (int i = 0; i < index; i++) {
                 System.out.println(mensajes[i]);
             }
